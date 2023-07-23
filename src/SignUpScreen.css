@@ -1,0 +1,77 @@
+/* Define some variables for colors and fonts */
+:root {
+    --bg-color: #0f4c75;
+    --form-color: #fff;
+    --font-family: Arial, sans-serif;
+  }
+  
+  /* Style the body element */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+  }
+  
+  /* Style the sign up form container */
+  .sign-up-form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--form-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the sign up form title */
+  .sign-up-form h1 {
+    text-align: center;
+    color: var(--bg-color);
+  }
+  
+  /* Style the form group elements */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Style the form labels */
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Style the form inputs */
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  /* Style the create account button */
+  .sign-up-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--bg-color);
+    color: var(--form-color);
+  }
+  
+  /* Style the footer element */
+  footer {
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  /* Style the footer links */
+  footer a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Style the footer text */
+  footer p {
+    display: inline-block;
+  }
+  

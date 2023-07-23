@@ -12,6 +12,25 @@ function SignUpScreen() {
   const [password, setPassword] = useState("");
   const [dob, setDob] = useState("");
 
+  const handleEmailChange = (e) => {
+    //check email availability
+    axios
+      .get(
+        "https://mditest.elifeamerica.com/api/v1/email/check/" + e.target.value
+      )
+      .then((response) => {
+        console.log(response.data.result.exist);
+        if (response.data.result.exist === true) {
+          alert("Email already exists");
+          setEmail("");
+          e.target.value = "";
+        } else {
+          setEmail(e.target.value);
+        }
+      })
+      .catch((error) => console.log(error));
+  };
+
   // Define a function to handle the form submission
   function handleSubmit(e) {
     e.preventDefault();
@@ -24,7 +43,6 @@ function SignUpScreen() {
       last_name: lastName,
       mobile_number: mobile,
       dob: dob,
-      
     };
     // Navigate to your sign up page here
     axios
@@ -62,8 +80,8 @@ function SignUpScreen() {
           <input
             type="email"
             id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            // value={email}
+            onBlur={handleEmailChange}
             required
           />
         </div>
@@ -100,9 +118,9 @@ function SignUpScreen() {
         <button type="submit">Create Account</button>
       </form>
       <footer>
-        <a href="#">About Us</a>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
+        <a href="/">About Us</a>
+        <a href="/">Privacy</a>
+        <a href="/">Terms</a>
         <p>Version 1.0</p>
       </footer>
     </div>

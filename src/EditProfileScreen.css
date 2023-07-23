@@ -1,0 +1,99 @@
+/* Use CSS to style the form */
+.Edit-profile-page {
+    width: 600px;
+    margin: auto;
+  }
+  
+  .Edit-profile-page h1 {
+    text-align: center;
+  }
+  
+  .Edit-profile-page .row {
+    display: flex;
+  }
+  
+  .Edit-profile-page .col {
+    flex: 1;
+  }
+  
+  .Edit-profile-page .col:first-child {
+    text-align: right;
+  }
+  
+  .Edit-profile-page .col:last-child {
+    text-align: left;
+  }
+  
+  .Edit-profile-page input[type=text],.Edit-profile-page input[type=email],.Edit-profile-page input[type=date] {
+    width: 200px;
+  }
+  
+  .Edit-profile-page input[type=radio] {
+    margin: 0 10px;
+  }
+  
+  .Edit-profile-page button {
+    display: block;
+    width: 200px;
+    margin: auto;
+    background-color: blue;
+    color: white;
+  }
+  
+  .Edit-profile-page header {
+    height: 80px;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the logo image */
+  .Edit-profile-page header img {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+  }
+
+  .Edit-profile-page .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .Edit-profile-page .menu button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .Edit-profile-page .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+  }
+
+  .Edit-profile-page .profile-info h1 {
+    margin: 0;
+  }
+  
+  .Edit-profile-page.profile-avatar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+  }
+  
+  .Edit-profile-page .profile-avatar img {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
