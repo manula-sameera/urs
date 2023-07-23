@@ -10,9 +10,8 @@ function EditProfileScreen() {
   const [email, setEmail] = useState("");
   const [dateOfBirth, setDateOfBirth] = useState("");
   const [gender, setGender] = useState("");
-  const [profileimage, setProfileImage] = useState(
-    "https://via.placeholder.com/150"
-  );
+  const profileimage= "https://via.placeholder.com/150";
+
 
   useEffect(() => {
     Services.Auth();

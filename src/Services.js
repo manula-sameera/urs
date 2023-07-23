@@ -28,4 +28,6 @@ function Auth() {
   }
 }
 
-export default { Auth };
+const Services = { Auth };
+
+export default Services;
